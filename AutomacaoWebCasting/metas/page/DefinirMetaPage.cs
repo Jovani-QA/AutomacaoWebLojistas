@@ -20,7 +20,7 @@ namespace metas.page
 
         // Mapeamento dos elementos da página de Definir metas diárias
         public IWebElement ModuloMeta=> driver.FindElement(By.XPath("/html[1]/body[1]/div[2]/div[1]/div[2]/form[1]/ul[1]/li[1]/a[1]"));
-        public IWebElement definirMetas => driver.FindElement(By.XPath("/html[1]/body[1]/div[3]/div[2]/div[2]/ul[1]/li[1]/div[2]/div[4]/a[1]/i[1]"));
+        public IWebElement definirMetas => driver.FindElement(By.XPath("/html[1]/body[1]/div[3]/div[2]/div[2]/ul[1]/li[1]/div[2]/div[5]/a[1]/i[1]"));
         public IWebElement inserirValorMeta => driver.FindElement(By.XPath("/html[1]/body[1]/div[3]/form[1]/fieldset[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1]"));
         public IWebElement clicarBtnInserirFuncionario=> driver.FindElement(By.XPath("/html[1]/body[1]/div[3]/form[1]/fieldset[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/button[1]"));
         public IWebElement BtnIncluir => driver.FindElement(By.XPath("/html[1]/body[1]/div[3]/form[1]/fieldset[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/button[1]"));

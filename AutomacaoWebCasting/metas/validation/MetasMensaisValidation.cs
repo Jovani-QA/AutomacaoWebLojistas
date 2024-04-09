@@ -20,13 +20,41 @@ public class MetasMensaisValidation
         {
             int somaValores = int.Parse(valor1) + int.Parse(valor2);
 
-            Assert.IsTrue(somaValores == 2200, "A soma dos valores das metas diárias não é igual ao valor esperado.");
+            Assert.Equals(somaValores == 2200, "A soma dos valores das metas diárias não é igual ao valor esperado.");
             //Assert.IsTrue(valorEsperado == somaValores || somaValores == 22);
             //Assert.AreEqual(somaValores, valorEsperado, "A soma dos valores das metas diárias não é igual ao valor esperado.");
+
+            IJavaScriptExecutor js = (IJavaScriptExecutor)driver;
+            js.ExecuteScript("var popup = document.createElement('div');" +
+                             "popup.innerHTML = 'Teste passou!';" +
+                             "popup.style.backgroundColor = 'green';" +
+                             "popup.style.color = 'white';" +
+                             "popup.style.padding = '20px';" +
+                             "popup.style.position = 'fixed';" +
+                             "popup.style.top = '10px';" +
+                             "popup.style.right = '10px';" +  // Posiciona a mensagem no lado direito
+                             "popup.style.zIndex = '9999';" +
+                             "document.body.appendChild(popup);" +
+                             "setTimeout(function(){popup.remove();}, 3000);");
+
+
         }
         else
         {
             Assert.Fail("O valor retornado pelo XPath não pôde ser convertido em Int32.");
+
+            IJavaScriptExecutor js = (IJavaScriptExecutor)driver;
+            js.ExecuteScript("var popup = document.createElement('div');" +
+                             "popup.innerHTML = 'O teste falhou';" +
+                             "popup.style.backgroundColor = 'red';" +
+                             "popup.style.color = 'white';" +
+                             "popup.style.padding = '20px';" +
+                             "popup.style.position = 'fixed';" +
+                             "popup.style.top = '10px';" +
+                             "popup.style.right = '10px';" +  // Posiciona a mensagem no lado direito
+                             "popup.style.zIndex = '9999';" +
+                             "document.body.appendChild(popup);" +
+                             "setTimeout(function(){popup.remove();}, 3000);");
         }
     }
 }

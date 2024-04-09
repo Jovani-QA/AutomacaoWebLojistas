@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Usuario\\source\\repos\\AutomacaoWebCasting\\AutomacaoWebCasting\\AutomacaoWebCasting.csproj": {}
+    "C:\\Users\\jovani.custodio\\Desktop\\DD\\AutomacaoWebCasting\\AutomacaoWebCasting\\AutomacaoWebCasting.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usuario\\source\\repos\\AutomacaoWebCasting\\AutomacaoWebCasting\\AutomacaoWebCasting.csproj": {
+    "C:\\Users\\jovani.custodio\\Desktop\\DD\\AutomacaoWebCasting\\AutomacaoWebCasting\\AutomacaoWebCasting.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\source\\repos\\AutomacaoWebCasting\\AutomacaoWebCasting\\AutomacaoWebCasting.csproj",
+        "projectUniqueName": "C:\\Users\\jovani.custodio\\Desktop\\DD\\AutomacaoWebCasting\\AutomacaoWebCasting\\AutomacaoWebCasting.csproj",
         "projectName": "AutomacaoWebCasting",
-        "projectPath": "C:\\Users\\Usuario\\source\\repos\\AutomacaoWebCasting\\AutomacaoWebCasting\\AutomacaoWebCasting.csproj",
-        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\source\\repos\\AutomacaoWebCasting\\AutomacaoWebCasting\\obj\\",
+        "projectPath": "C:\\Users\\jovani.custodio\\Desktop\\DD\\AutomacaoWebCasting\\AutomacaoWebCasting\\AutomacaoWebCasting.csproj",
+        "packagesPath": "C:\\Users\\jovani.custodio\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jovani.custodio\\Desktop\\DD\\AutomacaoWebCasting\\AutomacaoWebCasting\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\jovani.custodio\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,7 +22,9 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://gallery.uipath.com/api/v2": {},
+          "https://www.myget.org/F/workflow": {}
         },
         "frameworks": {
           "net48": {
@@ -40,9 +42,13 @@
         "net48": {
           "targetAlias": "net48",
           "dependencies": {
+            "Docker.DotNet": {
+              "target": "Package",
+              "version": "[3.125.15, )"
+            },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
-              "version": "[17.7.2, )"
+              "version": "[17.9.0, )"
             },
             "Microsoft.NETFramework.ReferenceAssemblies": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -52,7 +58,7 @@
             },
             "NUnit": {
               "target": "Package",
-              "version": "[3.13.3, )"
+              "version": "[4.1.0, )"
             },
             "NUnit3TestAdapter": {
               "target": "Package",
@@ -60,15 +66,15 @@
             },
             "Selenium.Support": {
               "target": "Package",
-              "version": "[4.14.1, )"
+              "version": "[4.18.1, )"
             },
             "Selenium.WebDriver": {
               "target": "Package",
-              "version": "[4.14.1, )"
+              "version": "[4.18.1, )"
             },
             "Selenium.WebDriver.ChromeDriver": {
               "target": "Package",
-              "version": "[118.0.5993.7000, )"
+              "version": "[122.0.6261.6901, )"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.416\\RuntimeIdentifierGraph.json"

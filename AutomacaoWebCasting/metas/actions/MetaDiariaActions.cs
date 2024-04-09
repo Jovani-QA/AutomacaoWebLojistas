@@ -55,6 +55,20 @@ namespace metas.actions
             metaPage.inserirMetaDiaria2.SendKeys(valor3.ToString());
 
         }
+
+        public void limparCampoA()
+        {
+            metaPage.inserirMetaDiaria1.Clear();
+
+        }
+        public void limparCampoB()
+        {
+            metaPage.inserirMetaDiaria2.Clear();
+
+        }
+
+
     }
 }
+
 

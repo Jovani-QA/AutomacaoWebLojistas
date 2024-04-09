@@ -58,9 +58,10 @@ namespace AutomacaoWebCasting.campanhas.page
 
         public IWebElement btnCancelar => driver.FindElement(By.Id("btnCancel"));
 
-        public IWebElement btnExcluirPremiacao => driver.FindElement(By.XPath("/html[1]/body[1]/div[3]/div[1]/div[1]/div[1]/div[2]/div[1]/form[1]/div[15]/table[1]/tbody[1]/tr[1]/td[3]/div[1]/a[1]/i[1]" +
-            ""));
+        public IWebElement btnExcluirPremiacao => driver.FindElement(By.XPath("/html[1]/body[1]/div[3]/div[1]/div[1]/div[1]/div[2]/div[1]/form[1]/div[15]/table[1]/tbody[1]/tr[1]/td[3]/div[1]/a[1]/i[1]" + ""));
+        public IWebElement mensagemAssertiva => driver.FindElement(By.XPath("/html/body/div[4]/div/div[2]/div[2]/p"));
 
+       public IWebElement mensagemElemento => driver.FindElement(By.XPath("/html/body/div[4]/div/div[2]/div[2]/p"));
 
     }
 }

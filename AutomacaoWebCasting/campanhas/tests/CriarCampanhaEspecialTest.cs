@@ -22,6 +22,12 @@ namespace AutomacaoWebCasting.campanhas.tests
         private CriarCampanhaEspecialPage campanhaespecialPage; // Adicione uma instância de MesaPage
         private CriarCampanhaEspecialActions campanhaEspecialActions; // Adicione uma instância de MesaActions
 
+        String nomeCampanha = " Cmapanha de natal 10";
+        String nomeDescricao = "teste";
+        String dtInicio = "10/11/2023";
+        String dtFim = "10/12/2024";
+        String valor = "500";
+
         [SetUp]
         public void Setup()
         {
@@ -30,7 +36,8 @@ namespace AutomacaoWebCasting.campanhas.tests
             user = User.BD118;
             actions = new Actions(page, user);
             campanhaespecialPage = new CriarCampanhaEspecialPage(config.Driver); // Inicialize MesaPage com o driver
-            campanhaEspecialActions = new CriarCampanhaEspecialActions(campanhaespecialPage); // Inicialize MesaActions com a instância de MesaPage
+            campanhaEspecialActions = new CriarCampanhaEspecialActions(campanhaespecialPage, config.Driver); // Inicialize MesaActions com a instância de MesaPage
+
         }
 
 
@@ -42,6 +49,20 @@ namespace AutomacaoWebCasting.campanhas.tests
 
             actions.FazerLogin();
             campanhaEspecialActions.ClicarModuloCampanhas();
+            campanhaEspecialActions.ClicarNoMenuCampanhasEspeciais();
+            campanhaEspecialActions.CriarNovaCampanha();
+            campanhaEspecialActions.InserirNomeDaCampanha(nomeCampanha);
+            campanhaEspecialActions.InserirNomeDescricao(nomeDescricao);
+            campanhaEspecialActions.SelecionarIndicador();
+            campanhaEspecialActions.ExpandirCampoApuracao();
+            campanhaEspecialActions.SelecionarLojas();
+            campanhaEspecialActions.Scroll();
+            campanhaEspecialActions.SelecionarIcone();
+            campanhaEspecialActions.InserirDataInicialEDataFinal(dtInicio, dtFim);
+            campanhaEspecialActions.AdicionarPremiacao(valor);
+            campanhaEspecialActions.SalvarCampanha();
+            campanhaEspecialActions.VerificarMensagemDeSucesso();
+
 
         }
     }

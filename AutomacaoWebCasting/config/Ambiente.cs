@@ -3,7 +3,7 @@
 public class Ambiente
 {
     public string UrlLocal { get; private set; } = "http://localhost";
-    public string UrlHomologacao { get; private set; } = "http://169.62.128.213/Casting/CASTING_ADM_HOMO/Account/Login";
+    public string UrlHomologacao { get; private set; } = "http://cstng.serhcm.com.br/Casting/CASTING_ADM_HOMO/Enquete";
 
     public string UrlPWA { get; private set; } = "https://ser-casting.web.app/login";
     public string UrlProducao { get; private set; } = "http://producao.com";
